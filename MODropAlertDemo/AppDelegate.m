@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  MODropAlertDemo
 //
-//  Created by minsOne on 2014. 7. 1..
-//  Copyright (c) 2014년 minsOne. All rights reserved.
+//  Created by Ahn JungMin on 2014. 7. 1..
+//  Copyright (c) 2014년 Ahn JungMin. All rights reserved.
 //
 
 #import "AppDelegate.h"

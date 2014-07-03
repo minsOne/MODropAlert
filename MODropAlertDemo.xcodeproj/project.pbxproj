@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F2316A61962DD280028898F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2316A51962DD280028898F /* Images.xcassets */; };
+		7F2316AC196535E20028898F /* MODropAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2316A9196535E20028898F /* MODropAlertView.m */; };
+		7F2316AD196535E20028898F /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2316AB196535E20028898F /* UIImage+ImageEffects.m */; };
 		7FCCE94B1962533E00022F9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCCE94A1962533E00022F9E /* main.m */; };
 		7FCCE94E1962533E00022F9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCCE94D1962533E00022F9E /* AppDelegate.m */; };
 		7FCCE9511962533E00022F9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCCE9501962533E00022F9E /* ViewController.m */; };
 		7FCCE9541962533E00022F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCCE9521962533E00022F9E /* Main.storyboard */; };
-		7FCCE9561962533E00022F9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCCE9551962533E00022F9E /* Images.xcassets */; };
 		7FCCE9621962533E00022F9E /* MODropAlertDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCCE9611962533E00022F9E /* MODropAlertDemoTests.m */; };
+		7FCCE97019626FB700022F9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCCE96F19626FB700022F9E /* UIKit.framework */; };
+		7FCCE97219626FBF00022F9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCCE97119626FBF00022F9E /* CoreGraphics.framework */; };
+		7FCCE97419626FC600022F9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCCE97319626FC600022F9E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,18 +31,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F2316A51962DD280028898F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7F2316A8196535E20028898F /* MODropAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MODropAlertView.h; sourceTree = "<group>"; };
+		7F2316A9196535E20028898F /* MODropAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MODropAlertView.m; sourceTree = "<group>"; };
+		7F2316AA196535E20028898F /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		7F2316AB196535E20028898F /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		7FCCE9451962533E00022F9E /* MODropAlertDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODropAlertDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCCE9491962533E00022F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FCCE94A1962533E00022F9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7FCCE94C1962533E00022F9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7FCCE94D1962533E00022F9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7FCCE94F1962533E00022F9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7FCCE9501962533E00022F9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7FCCE94A1962533E00022F9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7FCCE94C1962533E00022F9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7FCCE94D1962533E00022F9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7FCCE94F1962533E00022F9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7FCCE9501962533E00022F9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7FCCE9531962533E00022F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7FCCE9551962533E00022F9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7FCCE95B1962533E00022F9E /* MODropAlertDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MODropAlertDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCCE9601962533E00022F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FCCE9611962533E00022F9E /* MODropAlertDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODropAlertDemoTests.m; sourceTree = "<group>"; };
+		7FCCE9611962533E00022F9E /* MODropAlertDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MODropAlertDemoTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7FCCE96F19626FB700022F9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FCCE97119626FBF00022F9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FCCE97319626FC600022F9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCCE97419626FC600022F9E /* Foundation.framework in Frameworks */,
+				7FCCE97219626FBF00022F9E /* CoreGraphics.framework in Frameworks */,
+				7FCCE97019626FB700022F9E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F2316A7196535E20028898F /* MODropAlert */ = {
+			isa = PBXGroup;
+			children = (
+				7F2316A8196535E20028898F /* MODropAlertView.h */,
+				7F2316A9196535E20028898F /* MODropAlertView.m */,
+				7F2316AA196535E20028898F /* UIImage+ImageEffects.h */,
+				7F2316AB196535E20028898F /* UIImage+ImageEffects.m */,
+			);
+			path = MODropAlert;
+			sourceTree = "<group>";
+		};
 		7FCCE93C1962533E00022F9E = {
 			isa = PBXGroup;
 			children = (
+				7FCCE97319626FC600022F9E /* Foundation.framework */,
+				7FCCE97119626FBF00022F9E /* CoreGraphics.framework */,
+				7FCCE96F19626FB700022F9E /* UIKit.framework */,
 				7FCCE9471962533E00022F9E /* MODropAlertDemo */,
 				7FCCE95E1962533E00022F9E /* MODropAlertDemoTests */,
 				7FCCE9461962533E00022F9E /* Products */,
@@ -79,12 +108,13 @@
 		7FCCE9471962533E00022F9E /* MODropAlertDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7F2316A7196535E20028898F /* MODropAlert */,
 				7FCCE94C1962533E00022F9E /* AppDelegate.h */,
 				7FCCE94D1962533E00022F9E /* AppDelegate.m */,
 				7FCCE94F1962533E00022F9E /* ViewController.h */,
 				7FCCE9501962533E00022F9E /* ViewController.m */,
 				7FCCE9521962533E00022F9E /* Main.storyboard */,
-				7FCCE9551962533E00022F9E /* Images.xcassets */,
+				7F2316A51962DD280028898F /* Images.xcassets */,
 				7FCCE9481962533E00022F9E /* Supporting Files */,
 			);
 			path = MODropAlertDemo;
@@ -197,7 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCCE9541962533E00022F9E /* Main.storyboard in Resources */,
-				7FCCE9561962533E00022F9E /* Images.xcassets in Resources */,
+				7F2316A61962DD280028898F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2316AC196535E20028898F /* MODropAlertView.m in Sources */,
+				7F2316AD196535E20028898F /* UIImage+ImageEffects.m in Sources */,
 				7FCCE9511962533E00022F9E /* ViewController.m in Sources */,
 				7FCCE94E1962533E00022F9E /* AppDelegate.m in Sources */,
 				7FCCE94B1962533E00022F9E /* main.m in Sources */,
@@ -333,6 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MODropAlertDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -344,6 +377,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MODropAlertDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -362,6 +396,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = MODropAlertDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,6 +413,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = MODropAlertDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +440,7 @@
 				7FCCE9671962533E00022F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FCCE9681962533E00022F9E /* Build configuration list for PBXNativeTarget "MODropAlertDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +449,7 @@
 				7FCCE96A1962533E00022F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
