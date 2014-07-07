@@ -15,8 +15,7 @@ typedef NS_ENUM(NSInteger, DropAlertViewType) {
 
 typedef NS_ENUM(NSInteger, DropAlertButtonType) {
     DropAlertButtonOK,
-    DropAlertButtonFail,
-    DropAlertButtonDefault
+    DropAlertButtonFail
 };
 
 typedef void (^blk)(void);
