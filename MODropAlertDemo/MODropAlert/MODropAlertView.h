@@ -19,6 +19,8 @@ typedef NS_ENUM(NSInteger, DropAlertButtonType) {
     DropAlertButtonDefault
 };
 
+typedef void (^blk)(void);
+
 @class MODropAlertView;
 
 @protocol MODropAlertViewDelegate;
@@ -32,8 +34,13 @@ typedef NS_ENUM(NSInteger, DropAlertButtonType) {
 - (instancetype)initDropAlertWithTitle:(NSString *)title description:(NSString *)description okButtonTitle:(NSString *)okButtonTitle okButtonColor:(UIColor *)okBtnColor;
 - (instancetype)initDropAlertWithTitle:(NSString *)title description:(NSString *)description okButtonTitle:(NSString *)okButtonTitle cancelButtonTitle:(NSString *)cancelButtonTitle okButtonColor:(UIColor *)okBtnColor cancelButtonColor:(UIColor *)cancelBtnColor;
 
+- (instancetype)initDropAlertWithTitle:(NSString *)title description:(NSString *)description okButtonTitle:(NSString *)okButtonTitle successBlock:(blk)successBlock;
+- (instancetype)initDropAlertWithTitle:(NSString *)title description:(NSString *)description okButtonTitle:(NSString *)okButtonTitle cancelButtonTitle:(NSString *)cancelButtonTitle successBlock:(blk)successBlock failureBlock:(blk)failureBlock;
+- (instancetype)initDropAlertWithTitle:(NSString *)title description:(NSString *)description okButtonTitle:(NSString *)okButtonTitle okButtonColor:(UIColor *)okBtnColor successBlock:(blk)successBlock;
+- (instancetype)initDropAlertWithTitle:(NSString *)title description:(NSString *)description okButtonTitle:(NSString *)okButtonTitle cancelButtonTitle:(NSString *)cancelButtonTitle okButtonColor:(UIColor *)okBtnColor cancelButtonColor:(UIColor *)cancelBtnColor successBlock:(blk)successBlock failureBlock:(blk)failureBlock;
+
 - (void)show;
-- (void)dismiss;
+- (void)dismiss:(DropAlertButtonType)buttonType;
 
 @end
 
@@ -42,8 +49,8 @@ typedef NS_ENUM(NSInteger, DropAlertButtonType) {
 @optional
 - (void)alertViewWillAppear:(MODropAlertView *)alertView;
 - (void)alertViewDidAppear:(MODropAlertView *)alertView;
-- (void)alertViewWilldisappear:(MODropAlertView *)alertView;
-- (void)alertViewDidDisappear:(MODropAlertView *)alertView;
+- (void)alertViewWilldisappear:(MODropAlertView *)alertView buttonType:(DropAlertButtonType)buttonType;
+- (void)alertViewDidDisappear:(MODropAlertView *)alertView buttonType:(DropAlertButtonType)buttonType;
 - (void)alertViewPressButton:(MODropAlertView *)alertView buttonType:(DropAlertButtonType)buttonType;
 
 @end

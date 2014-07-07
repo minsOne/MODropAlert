@@ -61,43 +61,55 @@
 
 - (IBAction)pressCustomDoubleButton:(id)sender
 {
-    MODropAlertView *alertView = [[MODropAlertView alloc]initDropAlertWithTitle:@"Custom Info" 
-                                                                    description:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
-                                                                  okButtonTitle:@"OK" 
-                                                              cancelButtonTitle:@"Cancel" 
-                                                                  okButtonColor:[UIColor blueColor] 
-                                                              cancelButtonColor:[UIColor greenColor]];
-    alertView.delegate = self;
-    [alertView show];
+//    MODropAlertView *alertView = [[MODropAlertView alloc]initDropAlertWithTitle:@"Custom Info" 
+//                                                                    description:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
+//                                                                  okButtonTitle:@"OK" 
+//                                                              cancelButtonTitle:@"Cancel" 
+//                                                                  okButtonColor:[UIColor blueColor] 
+//                                                              cancelButtonColor:[UIColor greenColor]];
+//    alertView.delegate = self;
+//    [alertView show];
+    MODropAlertView *alert = [[MODropAlertView alloc]initDropAlertWithTitle:@"Custom Info"
+                                                                description:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                              okButtonTitle:@"OK"
+                                                          cancelButtonTitle:@"Cancel"
+                                                               successBlock:^{
+                                                                   NSLog(@"Success Log");
+                                                               }
+                                                               failureBlock:^{
+                                                                   NSLog(@"Fail Log");
+                                                               }];
+    [alert show];
 }
+
 
 #pragma mark - AlertView Delegate Methods
 
-- (void)alertViewWillAppear:(MODropAlertView *)alertView
-{
-    NSLog(@"%s", __FUNCTION__);
-}
-- (void)alertViewDidAppear:(MODropAlertView *)alertView
-{
-    NSLog(@"%s", __FUNCTION__);
-}
-
-- (void)alertViewWilldisappear:(MODropAlertView *)alertView
-{
-    NSLog(@"%s", __FUNCTION__);
-}
-
-- (void)alertViewDidDisappear:(MODropAlertView *)alertView
-{
-    NSLog(@"%s", __FUNCTION__);
-}
-
-- (void)alertViewPressButton:(MODropAlertView *)alertView buttonType:(DropAlertButtonType)buttonType
-{
-    NSLog(@"%s", __FUNCTION__);
-    
-    NSLog(@"ButtonType %d", buttonType);
-    [alertView dismiss];
-}
+//- (void)alertViewWillAppear:(MODropAlertView *)alertView
+//{
+//    NSLog(@"%s", __FUNCTION__);
+//}
+//- (void)alertViewDidAppear:(MODropAlertView *)alertView
+//{
+//    NSLog(@"%s", __FUNCTION__);
+//}
+//
+//- (void)alertViewWilldisappear:(MODropAlertView *)alertView
+//{
+//    NSLog(@"%s", __FUNCTION__);
+//}
+//
+//- (void)alertViewDidDisappear:(MODropAlertView *)alertView
+//{
+//    NSLog(@"%s", __FUNCTION__);
+//}
+//
+//- (void)alertViewPressButton:(MODropAlertView *)alertView buttonType:(DropAlertButtonType)buttonType
+//{
+//    NSLog(@"%s", __FUNCTION__);
+//    
+//    NSLog(@"ButtonType %d", buttonType);
+//    [alertView dismiss];
+//}
 
 @end
