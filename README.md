@@ -38,15 +38,11 @@ alertView.delegate = self;
 
 * Block
 ```objective-c
-MODropAlertView *alert = [[MODropAlertView alloc]initDropAlertWithTitle:@"Custom Info"
-                                                            description:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+MODropAlertView *alert = [[MODropAlertView alloc]initDropAlertWithTitle:@"Block AlertView" 
+                                                            description:@"Lorem ipsum dolor sit amet."
                                                           okButtonTitle:@"OK"
-                                                      cancelButtonTitle:@"Cancel"
                                                            successBlock:^{
                                                                NSLog(@"Success Log");
-                                                           }
-                                                           failureBlock:^{
-                                                               NSLog(@"Fail Log");
                                                            }];
 [alert show];
 ```
