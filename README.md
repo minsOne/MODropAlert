@@ -9,7 +9,7 @@ I want to make dropping alert view, so I make this custom alert view library.
 
 ## Installation Cocoapods
 
-as soon as..(Really?)
+as soon as..(maybe?)
 
 ## How to use it
 
