@@ -195,8 +195,8 @@ static NSString* kAlertCancelButtonHighlightColor = @"#b0120a";
                             description:description
                           okButtonTitle:okButtonTitle
                       cancelButtonTitle:cancelButtonTitle
-                          okButtonColor:okButtonColor
-                      cancelButtonColor:cancelButtonColor
+                          okButtonColor:okBtnColor
+                      cancelButtonColor:cancelBtnColor
                            successBlock:successBlock
                            failureBlock:failureBlock
                               alertType:DropAlertCustom];
