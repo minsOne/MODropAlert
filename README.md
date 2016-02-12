@@ -7,7 +7,7 @@ I want to make dropping alert view, so I make this custom alert view library.
 
 (the above gif is iphone simulator animation.)
 
-## Installation Cocoapods
+## Installation CocoaPods
 
 as soon as..(maybe?)
 
